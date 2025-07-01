@@ -1,9 +1,10 @@
 [build]
   publish = "dist"
-  command = "npm run build"
+  command = "cd client && NODE_ENV=production npx vite build --outDir ../dist --mode production"
 
 [build.environment]
-  NODE_VERSION = "18"
+  NODE_VERSION = "20"
+  NODE_ENV = "production"
 
 [[redirects]]
   from = "/api/*"
