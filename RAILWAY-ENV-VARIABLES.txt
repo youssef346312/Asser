@@ -1,0 +1,24 @@
+متغيرات البيئة لـ Railway:
+
+NODE_ENV=production
+
+JWT_SECRET=AsserCoin2025SecretKeyForJWTTokenSecurity
+
+EMAIL_USER=asserplatform@gmail.com
+
+EMAIL_PASS=dfij uzch cwtz plpi
+
+SMTP_HOST=smtp.gmail.com
+
+SMTP_PORT=587
+
+SMTP_USER=asserplatform@gmail.com
+
+SMTP_PASS=dfij uzch cwtz plpi
+
+---
+
+ملاحظات:
+- DATABASE_URL يُضاف تلقائياً عند إضافة PostgreSQL
+- PORT يُحدد تلقائياً من Railway
+- المتغيرات أبسط من Render
