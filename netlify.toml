@@ -1,6 +1,6 @@
 [build]
   publish = "dist"
-  command = "cd client && NODE_ENV=production npx vite build --outDir ../dist --mode production"
+  command = "npm install && cd client && npx vite build --outDir ../dist --emptyOutDir"
 
 [build.environment]
   NODE_VERSION = "20"
