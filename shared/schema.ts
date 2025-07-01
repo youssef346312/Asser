@@ -29,6 +29,7 @@ export const users = pgTable("users", {
   country: text("country"),
   ipAddress: text("ip_address"),
   phoneVerified: boolean("phone_verified").default(false),
+  avatar: text("avatar"),
   createdAt: timestamp("created_at").defaultNow(),
   updatedAt: timestamp("updated_at").defaultNow(),
 });

@@ -42,6 +42,7 @@ export interface IStorage {
   getReferralStats(userId: number): Promise<{ count: number; earnings: number }>;
   createVerificationCodes(codes: Partial<VerificationCode>): Promise<VerificationCode>;
   getVerificationCodes(email: string, phone: string): Promise<VerificationCode | undefined>;
+  getVerificationCodesById(id: number): Promise<VerificationCode | undefined>;
   markCodesAsUsed(id: number): Promise<void>;
   setAdminUsers(emails: string[]): Promise<void>;
   setAdminUsersByUserId(userIds: string[]): Promise<void>;
@@ -252,6 +253,13 @@ class DatabaseStorage implements IStorage {
   async getVerificationCodes(email: string, phone: string): Promise<VerificationCode | undefined> {
     const [result] = await db.select().from(verificationCodes)
       .where(and(eq(verificationCodes.email, email), eq(verificationCodes.phone, phone)))
+      .limit(1);
+    return result;
+  }
+
+  async getVerificationCodesById(id: number): Promise<VerificationCode | undefined> {
+    const [result] = await db.select().from(verificationCodes)
+      .where(eq(verificationCodes.id, id))
       .limit(1);
     return result;
   }
