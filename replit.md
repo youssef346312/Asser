@@ -104,7 +104,8 @@ AsserCoin is a full-stack web application built as a cryptocurrency gaming platf
 
 ## Changelog
 
-- June 30, 2025. COMPLETED: Prepared project for deployment to Render - added render.yaml, Dockerfile, deployment guides, and updated server port configuration
+- June 30, 2025. COMPLETED: Prepared project for deployment to Netlify - added netlify.toml, serverless functions, deployment guides, and optimized for static hosting with API functions
+- June 30, 2025. COMPLETED: Cleaned up project files - removed Render/Railway configs, broken files, and unnecessary dependencies
 - June 26, 2025. COMPLETED: Replaced Asser Smart Strategy with Telegram Games system - users can subscribe for 5 AC per game at scheduled times
 - June 26, 2025. Reset all user Asser Coin balances to 0 as requested by client
 - June 26, 2025. Fixed deposit/withdrawal display errors - now shows proper transfer details

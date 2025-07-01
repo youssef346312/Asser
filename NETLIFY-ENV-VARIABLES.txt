@@ -1,0 +1,28 @@
+متغيرات البيئة المطلوبة في Netlify:
+
+NODE_ENV=production
+
+DATABASE_URL=[احصل على رابط من Neon Database أو Supabase]
+
+JWT_SECRET=AsserCoin2025SecretKeyForJWTTokenSecurity
+
+EMAIL_USER=asserplatform@gmail.com
+
+EMAIL_PASS=dfij uzch cwtz plpi
+
+SMTP_HOST=smtp.gmail.com
+
+SMTP_PORT=587
+
+SMTP_USER=asserplatform@gmail.com
+
+SMTP_PASS=dfij uzch cwtz plpi
+
+---
+
+كيفية إضافتها:
+1. في Netlify Dashboard
+2. اختر الموقع
+3. Site Settings
+4. Environment Variables
+5. Add Variable لكل متغير
